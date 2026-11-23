@@ -4,32 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ATELIER NOIR | Architecture & Design Studio</title>
-<meta name="description" content="Premium architecture, interior design, exterior design, AutoCAD, Revit and 3D rendering services in London.">
+<meta name="description" content="Architecture, residential and commercial interior design, exterior design, AutoCAD, Revit and 3D rendering services across the United Kingdom.">
+
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-:root{--gold:#c6a56a;--dark:#11110f;--panel:#191916;--muted:#aaa}
+:root{
+--gold:#c6a56a;
+--dark:#11110f;
+--panel:#191916;
+--muted:#aaa;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--dark);color:#fff;font-family:'DM Sans',sans-serif}
 a{text-decoration:none;color:inherit}
-header{height:85px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #333;position:sticky;top:0;background:rgba(17,17,15,.97);z-index:100}
+
+header{
+height:85px;padding:0 7%;
+display:flex;align-items:center;justify-content:space-between;
+border-bottom:1px solid #333;position:sticky;top:0;
+background:rgba(17,17,15,.97);z-index:100
+}
 .logo{font-family:'Playfair Display',serif;font-size:21px;letter-spacing:2px}
 .logo span{font-family:'DM Sans',sans-serif;font-size:10px;color:var(--gold);letter-spacing:1px}
-nav{display:flex;gap:25px;font-size:11px;color:#ccc}
+nav{display:flex;gap:23px;font-size:11px;color:#ccc}
 nav a:hover{color:var(--gold)}
-.hero{min-height:680px;display:flex;align-items:center;padding:90px 9%;background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800') center/cover}
+
+.hero{
+min-height:680px;display:flex;align-items:center;padding:90px 9%;
+background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.2)),
+url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800') center/cover
+}
 .hero-content{max-width:680px}
 .eyebrow{color:var(--gold);letter-spacing:4px;font-size:11px}
 h1{font-family:'Playfair Display',serif;font-size:clamp(48px,7vw,82px);font-weight:400;line-height:1.12;margin:25px 0}
 h1 span,.gold{color:var(--gold);font-style:italic}
 .hero p{color:#ddd;line-height:1.9;max-width:530px;font-size:14px}
-.btn{display:inline-block;margin-top:30px;background:var(--gold);color:#111;padding:15px 29px;font-size:11px;letter-spacing:2px;font-weight:600;border:0;cursor:pointer}
+.btn{
+display:inline-block;margin-top:30px;background:var(--gold);color:#111;
+padding:15px 29px;font-size:11px;letter-spacing:2px;font-weight:600;border:0;cursor:pointer
+}
 .btn:hover{background:#e0c18a}
+
 section{padding:95px 7%}
 .section-heading{text-align:center;margin-bottom:55px}
 .section-heading h2{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,52px);font-weight:400;margin:17px 0}
 .section-heading p{color:var(--muted);font-size:13px;line-height:1.8}
+
 .about{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
 .about img{width:100%;height:480px;object-fit:cover}
 .about h2{font-family:'Playfair Display',serif;font-size:45px;font-weight:400;margin:20px 0}
@@ -69,7 +91,6 @@ section{padding:95px 7%}
 .price-card h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:400}
 .price-card .price{font-size:28px;color:var(--gold);margin:20px 0}
 .price-card p{font-size:13px;color:#aaa;line-height:1.9}
-.price-card .btn{font-size:10px}
 
 /* PROCESS */
 .process{background:#171714}
@@ -85,15 +106,50 @@ section{padding:95px 7%}
 .faq-item h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:400;margin-bottom:10px}
 .faq-item p{font-size:13px;color:#aaa;line-height:1.8}
 
-/* CONTACT */
-.contact{background:#171714}
-.contact-wrap{max-width:750px;margin:auto}
-.contact-form{display:grid;gap:15px}
-input,textarea,select{width:100%;padding:17px;background:#1d1d19;border:1px solid #444;color:white;font-family:inherit;font-size:13px}
-textarea{min-height:130px;resize:vertical}
-input:focus,textarea:focus,select:focus{outline:none;border-color:var(--gold)}
+/* ENQUIRY */
+.enquiry-page{background:#11110f;padding:100px 7%;color:#fff}
+.enquiry-container{max-width:1100px;margin:auto}
+.enquiry-heading{text-align:center;margin-bottom:55px}
+.enquiry-heading h2{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,58px);font-weight:400;margin:18px 0}
+.enquiry-heading h2 span{color:var(--gold);font-style:italic}
+.enquiry-heading p{color:#aaa;font-size:14px;line-height:1.9}
+
+.enquiry-contact-info{
+display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+margin-bottom:50px;padding:30px;background:#191916;border:1px solid #38352e
+}
+.contact-detail small{color:var(--gold);font-size:10px;letter-spacing:2px;display:block;margin-bottom:12px}
+.contact-detail a,.contact-detail strong{color:#eee;font-size:14px;font-weight:400;overflow-wrap:anywhere}
+
+.enquiry-form-box{background:#191916;border:1px solid #38352e;padding:45px}
+.form-title{font-family:'Playfair Display',serif;font-size:27px;font-weight:400;margin-bottom:8px}
+.form-subtitle{color:#999;font-size:12px;margin-bottom:35px;line-height:1.8}
+.enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:23px}
+.form-group{display:flex;flex-direction:column;gap:10px}
+.form-group.full{grid-column:1/-1}
+.form-group label{color:#ddd;font-size:12px}
+.form-group label span{color:var(--gold)}
+.form-group input,.form-group select,.form-group textarea{
+width:100%;padding:16px;background:#11110f;border:1px solid #444;
+color:#fff;font-family:inherit;font-size:13px;outline:none;border-radius:0
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group select option{background:#191916;color:#fff}
+.form-group textarea{min-height:150px;resize:vertical}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#777}
+.privacy-check{grid-column:1/-1;display:flex;align-items:flex-start;gap:12px;color:#aaa;font-size:12px;line-height:1.8}
+.privacy-check input{margin-top:4px;accent-color:var(--gold)}
+.privacy-check a{color:var(--gold);text-decoration:underline}
+.submit-enquiry{
+grid-column:1/-1;padding:19px;background:var(--gold);color:#111;border:0;
+font-size:11px;font-weight:600;letter-spacing:2px;cursor:pointer;transition:.3s
+}
+.submit-enquiry:hover{background:#e0c18a}
+.enquiry-note{text-align:center;color:#777;font-size:11px;margin-top:25px;line-height:1.8}
+
 footer{padding:40px 7%;border-top:1px solid #333;display:flex;justify-content:space-between;gap:20px;color:#999;font-size:12px}
 footer span{color:var(--gold)}
+
 @media(max-width:850px){
 .service-grid{grid-template-columns:repeat(2,1fr)}
 .pricing-grid{grid-template-columns:1fr 1fr}
@@ -110,6 +166,11 @@ section{padding:70px 6%}
 .about img{height:330px}
 .service-grid,.portfolio-grid,.pricing-grid,.process-grid{grid-template-columns:1fr}
 .portfolio-card img{height:270px}
+.enquiry-page{padding:70px 5%}
+.enquiry-contact-info{grid-template-columns:1fr;padding:25px;gap:25px}
+.enquiry-form-box{padding:25px 18px}
+.enquiry-form{grid-template-columns:1fr}
+.form-group.full,.privacy-check,.submit-enquiry{grid-column:1}
 footer{flex-direction:column}
 }
 </style>
@@ -128,6 +189,7 @@ footer{flex-direction:column}
 </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 <div class="hero-content">
 <div class="eyebrow">LONDON · ARCHITECTURE · INTERIORS</div>
@@ -137,6 +199,7 @@ footer{flex-direction:column}
 </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="about">
 <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200" alt="Luxury interior design">
 <div>
@@ -148,6 +211,7 @@ footer{flex-direction:column}
 </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services" class="services">
 <div class="section-heading">
 <div class="eyebrow">WHAT WE OFFER</div>
@@ -161,47 +225,48 @@ footer{flex-direction:column}
 <small>01 / INTERIORS</small>
 <h3>Interior Design</h3>
 <p>Elegant interiors, furniture layouts, colour schemes and detailed space planning.</p>
-<a class="enquiry-link" href="#contact" onclick="selectService('Interior Design')">FOR ENQUIRY ↗</a>
+<a class="enquiry-link" href="#contact" onclick="selectService('Residential Interior Design')">FOR ENQUIRY ↗</a>
 </div>
 
 <div class="service">
 <small>02 / EXTERIORS</small>
 <h3>Exterior Design</h3>
 <p>Contemporary facade concepts, material selections and exterior visualisation.</p>
-<a class="enquiry-link" href="#contact" onclick="selectService('Exterior Design')">FOR ENQUIRY ↗</a>
+<a class="enquiry-link" href="#contact" onclick="selectService('Residential Exterior Design')">FOR ENQUIRY ↗</a>
 </div>
 
 <div class="service">
 <small>03 / ARCHITECTURE</small>
 <h3>Architectural Design</h3>
 <p>Architectural concepts, floor plans, elevations and design development.</p>
-<a class="enquiry-link" href="#contact" onclick="selectService('Architectural Design')">FOR ENQUIRY ↗</a>
+<a class="enquiry-link" href="#contact" onclick="selectService('Residential Architecture')">FOR ENQUIRY ↗</a>
 </div>
 
 <div class="service">
 <small>04 / VISUALISATION</small>
 <h3>3D Visualisation</h3>
 <p>Detailed 3D models and realistic-style renders to present design concepts.</p>
-<a class="enquiry-link" href="#contact" onclick="selectService('3D Visualisation')">FOR ENQUIRY ↗</a>
+<a class="enquiry-link" href="#contact" onclick="selectService('Residential 3D Rendering')">FOR ENQUIRY ↗</a>
 </div>
 
 <div class="service">
 <small>05 / SPACE PLANNING</small>
 <h3>Space Planning</h3>
 <p>Functional layouts and efficient use of available residential and commercial space.</p>
-<a class="enquiry-link" href="#contact" onclick="selectService('Space Planning')">FOR ENQUIRY ↗</a>
+<a class="enquiry-link" href="#contact" onclick="selectService('Residential Space Planning')">FOR ENQUIRY ↗</a>
 </div>
 
 <div class="service">
 <small>06 / RENOVATION</small>
 <h3>Renovation Concepts</h3>
 <p>Fresh design ideas, layout improvements and modern renovation concepts.</p>
-<a class="enquiry-link" href="#contact" onclick="selectService('Renovation Concepts')">FOR ENQUIRY ↗</a>
+<a class="enquiry-link" href="#contact" onclick="selectService('Residential Renovation Design')">FOR ENQUIRY ↗</a>
 </div>
 
 </div>
 </section>
 
+<!-- PORTFOLIO -->
 <section id="portfolio" class="portfolio">
 <div class="section-heading">
 <div class="eyebrow">SELECTED DESIGN WORK</div>
@@ -212,7 +277,7 @@ footer{flex-direction:column}
 <div class="portfolio-grid">
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1100" alt="Luxury living room interior concept">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1100" alt="Luxury living room">
 <div class="portfolio-info">
 <span>01 / INTERIOR DESIGN</span>
 <h3>Luxury Living Space</h3>
@@ -221,7 +286,7 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1100" alt="Contemporary residential interior concept">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1100" alt="Contemporary residence">
 <div class="portfolio-info">
 <span>02 / INTERIOR CONCEPT</span>
 <h3>Contemporary Residence</h3>
@@ -230,7 +295,7 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1100" alt="Modern residential exterior concept">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1100" alt="Modern villa exterior">
 <div class="portfolio-info">
 <span>03 / EXTERIOR DESIGN</span>
 <h3>Modern Residential Villa</h3>
@@ -239,7 +304,7 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1100" alt="Modern home interior concept">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1100" alt="Minimalist home">
 <div class="portfolio-info">
 <span>04 / ARCHITECTURAL VISUALISATION</span>
 <h3>Minimalist Home Concept</h3>
@@ -248,7 +313,7 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1100" alt="Elegant interior concept">
+<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1100" alt="Elegant living interior">
 <div class="portfolio-info">
 <span>05 / LIVING ROOM DESIGN</span>
 <h3>Elegant Living Interior</h3>
@@ -257,7 +322,7 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1100" alt="Contemporary residential architecture concept">
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1100" alt="Contemporary residential design">
 <div class="portfolio-info">
 <span>06 / RESIDENTIAL DESIGN</span>
 <h3>Contemporary Architecture</h3>
@@ -267,16 +332,17 @@ footer{flex-direction:column}
 
 </div>
 
-<p style="text-align:center;color:#777;font-size:11px;margin-top:25px;line-height:1.8">
-Illustrative design references. Replace with original project drawings and renders before presenting these as completed work.
+<p class="portfolio-note">
+Illustrative design references. Replace with original project drawings and renders before presenting these as completed client work.
 </p>
 </section>
 
+<!-- SKILLS -->
 <section class="skills">
 <div class="section-heading">
 <div class="eyebrow">OUR TECHNICAL EXPERTISE</div>
 <h2>Design Tools & <span class="gold">Technology</span></h2>
-<p>Digital tools used to support our architectural design workflow.</p>
+<p>Digital tools supporting our architectural design workflow.</p>
 </div>
 <div class="skill-list">
 <span class="skill">AUTOCAD</span>
@@ -288,39 +354,45 @@ Illustrative design references. Replace with original project drawings and rende
 </div>
 </section>
 
+<!-- PRICING -->
 <section id="pricing">
 <div class="section-heading">
 <div class="eyebrow">TRANSPARENT STARTING PRICES</div>
 <h2>Our <span class="gold">Packages</span></h2>
-<p>Indicative starting prices. Final quotes depend on project scope and requirements.</p>
+<p>Indicative starting prices. Final quotations depend on project scope.</p>
 </div>
+
 <div class="pricing-grid">
 <div class="price-card">
 <h3>Consultation</h3>
 <div class="price">£100–£300</div>
 <p>Initial discussion, design direction and project requirements review.</p>
-<a class="btn" href="#contact" onclick="selectService('Consultation')">ENQUIRE NOW</a>
+<a class="btn" href="#contact" onclick="selectService('Complete Design Package')">ENQUIRE NOW</a>
 </div>
+
 <div class="price-card">
 <h3>Room Design</h3>
 <div class="price">£500–£1,000</div>
 <p>Interior concept, furniture layout, colour direction and design presentation.</p>
-<a class="btn" href="#contact" onclick="selectService('Room Design')">ENQUIRE NOW</a>
+<a class="btn" href="#contact" onclick="selectService('Residential Interior Design')">ENQUIRE NOW</a>
 </div>
+
 <div class="price-card">
 <h3>Complete Design</h3>
 <div class="price">£2,500–£5,000</div>
 <p>Extended design package for larger residential projects, subject to scope.</p>
-<a class="btn" href="#contact" onclick="selectService('Complete Design')">ENQUIRE NOW</a>
+<a class="btn" href="#contact" onclick="selectService('Complete Design Package')">ENQUIRE NOW</a>
 </div>
 </div>
 </section>
 
+<!-- PROCESS -->
 <section class="process">
 <div class="section-heading">
 <div class="eyebrow">HOW WE WORK</div>
 <h2>Our Design <span class="gold">Process</span></h2>
 </div>
+
 <div class="process-grid">
 <div class="process-item">
 <span>01 / DISCOVER</span>
@@ -345,15 +417,17 @@ Illustrative design references. Replace with original project drawings and rende
 </div>
 </section>
 
+<!-- FAQ -->
 <section>
 <div class="section-heading">
 <div class="eyebrow">COMMON QUESTIONS</div>
 <h2>Frequently Asked <span class="gold">Questions</span></h2>
 </div>
+
 <div class="faq-list">
 <div class="faq-item">
-<h3>Do you offer services in London?</h3>
-<p>We aim to work with London-based clients and can discuss project requirements remotely.</p>
+<h3>Do you offer services across the United Kingdom?</h3>
+<p>We welcome enquiries for UK projects. Availability and service scope will be discussed for each project.</p>
 </div>
 <div class="faq-item">
 <h3>What software do you use?</h3>
@@ -361,53 +435,211 @@ Illustrative design references. Replace with original project drawings and rende
 </div>
 <div class="faq-item">
 <h3>Can I request only 3D rendering?</h3>
-<p>Yes. You can enquire about individual services depending on the available project information and scope.</p>
+<p>Yes. You can enquire about individual services depending on project information and scope.</p>
 </div>
 <div class="faq-item">
-<h3>How can I receive a quote?</h3>
-<p>Send your project details through the enquiry form and we can discuss the scope and pricing.</p>
+<h3>How can I receive a quotation?</h3>
+<p>Complete the project enquiry form below and share your requirements. We can then discuss the scope and quotation.</p>
 </div>
 </div>
 </section>
 
-<section id="contact" class="contact">
-<div class="contact-wrap">
-<div class="section-heading">
-<div class="eyebrow">LET'S CREATE SOMETHING BEAUTIFUL</div>
-<h2>Start Your <span class="gold">Project</span></h2>
-<p>Tell us about your project and we will get in touch.</p>
+<!-- COMPLETE PROJECT ENQUIRY -->
+<section class="enquiry-page" id="contact">
+
+<div class="enquiry-container">
+
+<div class="enquiry-heading">
+<div class="eyebrow">START YOUR PROJECT</div>
+<h2>Let's Discuss <span>Your Vision.</span></h2>
+<p>Whether residential or commercial, share your project details and request a personalised quotation.</p>
 </div>
 
-<form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST">
-<input type="text" name="name" placeholder="Your Full Name" required>
-<input type="email" name="email" placeholder="Your Email Address" required>
-<input type="text" name="location" placeholder="Project Location">
-<select name="service" id="serviceSelect" required>
-<option value="">Select a Service</option>
-<option>Interior Design</option>
-<option>Exterior Design</option>
-<option>Architectural Design</option>
-<option>3D Visualisation</option>
-<option>Space Planning</option>
-<option>Renovation Concepts</option>
-<option>Consultation</option>
-<option>Room Design</option>
-<option>Complete Design</option>
+<div class="enquiry-contact-info">
+
+<div class="contact-detail">
+<small>EMAIL ADDRESS</small>
+<a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+</div>
+
+<div class="contact-detail">
+<small>PHONE / WHATSAPP</small>
+<a href="https://wa.me/44YOURNUMBER">+44 YOUR PHONE NUMBER</a>
+</div>
+
+<div class="contact-detail">
+<small>SERVICE AREA</small>
+<strong>United Kingdom</strong>
+</div>
+
+</div>
+
+<div class="enquiry-form-box">
+
+<h3 class="form-title">Project Enquiry Form</h3>
+<p class="form-subtitle">Please complete the details below so we can better understand your project.</p>
+
+<form class="enquiry-form"
+action="https://formspree.io/f/REPLACE_WITH_YOUR_ID"
+method="POST">
+
+<div class="form-group">
+<label>Full Name <span>*</span></label>
+<input type="text" name="Full Name" placeholder="Enter your full name" required>
+</div>
+
+<div class="form-group">
+<label>Email Address <span>*</span></label>
+<input type="email" name="Email" placeholder="Enter your email address" required>
+</div>
+
+<div class="form-group">
+<label>Phone Number <span>*</span></label>
+<input type="tel" name="Phone Number" placeholder="+44 ..." required>
+</div>
+
+<div class="form-group">
+<label>UK Postcode / Location <span>*</span></label>
+<input type="text" name="UK Postcode / Location" placeholder="e.g. SW1A 1AA, London" required>
+</div>
+
+<div class="form-group full">
+<label>Service Required <span>*</span></label>
+<select name="Service Required" required>
+<option value="">Select a service</option>
+<optgroup label="Residential Services">
+<option>Residential Interior Design</option>
+<option>Residential Exterior Design</option>
+<option>Residential Floor Plans</option>
+<option>Residential Architecture</option>
+<option>Residential 3D Rendering</option>
+<option>Residential Space Planning</option>
+<option>Residential Renovation Design</option>
+</optgroup>
+<optgroup label="Commercial Services">
+<option>Commercial Interior Design</option>
+<option>Commercial Exterior Design</option>
+<option>Commercial Floor Plans</option>
+<option>Commercial Architecture</option>
+<option>Commercial 3D Rendering</option>
+<option>Commercial Space Planning</option>
+<option>Retail / Restaurant Design</option>
+</optgroup>
+<option>Complete Design Package</option>
+<option>Other</option>
 </select>
-<textarea name="message" placeholder="Tell us about your project..." required></textarea>
-<button class="btn" type="submit">SEND ENQUIRY</button>
+</div>
+
+<div class="form-group full">
+<label>Property Type <span>*</span></label>
+<select name="Property Type" required>
+<option value="">Select property type</option>
+<optgroup label="Residential">
+<option>Detached House</option>
+<option>Semi-Detached House</option>
+<option>Terraced House</option>
+<option>Flat / Apartment</option>
+<option>Luxury Villa</option>
+<option>New Build Residential</option>
+<option>Residential Extension</option>
+<option>Other Residential</option>
+</optgroup>
+<optgroup label="Commercial">
+<option>Office / Workspace</option>
+<option>Retail Shop</option>
+<option>Restaurant / Cafe</option>
+<option>Hotel / Hospitality</option>
+<option>Commercial Building</option>
+<option>Warehouse</option>
+<option>Mixed-Use Property</option>
+<option>Other Commercial</option>
+</optgroup>
+</select>
+</div>
+
+<div class="form-group">
+<label>Estimated Project Budget <span>*</span></label>
+<select name="Estimated Project Budget" required>
+<option value="">Select your budget</option>
+<option>£500 – £1,000</option>
+<option>£1,000 – £2,500</option>
+<option>£2,500 – £5,000</option>
+<option>£5,000 – £10,000</option>
+<option>£10,000 – £25,000</option>
+<option>£25,000 – £50,000</option>
+<option>£50,000 – £100,000</option>
+<option>£100,000 – £250,000</option>
+<option>£250,000 – £500,000</option>
+<option>£500,000+</option>
+<option>Not decided yet</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Desired Start Timeline <span>*</span></label>
+<select name="Desired Start Timeline" required>
+<option value="">Select timeline</option>
+<option>Immediately</option>
+<option>Within 1–3 months</option>
+<option>Within 3–6 months</option>
+<option>Within 6–12 months</option>
+<option>More than 12 months</option>
+<option>Just exploring options</option>
+</select>
+</div>
+
+<div class="form-group full">
+<label>Approximate Property Size</label>
+<select name="Approximate Property Size">
+<option value="">Select property size</option>
+<option>Under 500 sq ft</option>
+<option>500–1,000 sq ft</option>
+<option>1,000–2,000 sq ft</option>
+<option>2,000–5,000 sq ft</option>
+<option>5,000–10,000 sq ft</option>
+<option>Over 10,000 sq ft</option>
+<option>Not sure</option>
+</select>
+</div>
+
+<div class="form-group full">
+<label>Tell Us About Your Project <span>*</span></label>
+<textarea name="Project Details" placeholder="Describe your project, requirements, ideas and any specific details..." required></textarea>
+</div>
+
+<label class="privacy-check">
+<input type="checkbox" name="Privacy Consent" value="Agreed" required>
+<span>
+I have read the <a href="privacy.html">privacy notice</a> and agree that my information may be used to respond to this enquiry.
+</span>
+</label>
+
+<button type="submit" class="submit-enquiry">
+SUBMIT PROJECT ENQUIRY ↗
+</button>
+
 </form>
+
+<p class="enquiry-note">
+Your information will be used to respond to your project enquiry.
+We respect your privacy.
+</p>
+
+</div>
 </div>
 </section>
 
 <footer>
 <div>© 2026 ATELIER NOIR · Architecture & Design Studio</div>
-<div>London, United Kingdom · <span>hello@yourdomain.co.uk</span></div>
+<div>United Kingdom · <span>YOUR_EMAIL@example.com</span></div>
 </footer>
 
 <script>
 function selectService(service){
-document.getElementById('serviceSelect').value=service;
+const select=document.querySelector('select[name="Service Required"]');
+if(select){
+select.value=service;
+}
 }
 </script>
 
