@@ -4,72 +4,112 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ATELIER NOIR | Architecture & Design Studio</title>
-<meta name="description" content="Premium architectural design, interior design, exterior concepts and 3D rendering services.">
+<meta name="description" content="Premium architecture, interior design, exterior design, AutoCAD, Revit and 3D rendering services in London.">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
+:root{--gold:#c6a56a;--dark:#11110f;--panel:#191916;--muted:#aaa}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:#11110f;color:#fff;font-family:'DM Sans',sans-serif}
+body{background:var(--dark);color:#fff;font-family:'DM Sans',sans-serif}
 a{text-decoration:none;color:inherit}
-header{height:85px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #333;position:sticky;top:0;background:#11110f;z-index:100}
-.logo{font-family:'Playfair Display',serif;font-size:22px;letter-spacing:2px}
-.logo span{font-family:'DM Sans',sans-serif;font-size:10px;color:#c6a56a;letter-spacing:1px}
-nav{display:flex;gap:28px;font-size:12px;color:#ccc}
-nav a:hover{color:#c6a56a}
-.hero{min-height:670px;display:flex;align-items:center;padding:90px 9%;background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.25)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800') center/cover}
-.hero-content{max-width:700px}
-.eyebrow{color:#c6a56a;letter-spacing:4px;font-size:11px}
+header{height:85px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #333;position:sticky;top:0;background:rgba(17,17,15,.97);z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:21px;letter-spacing:2px}
+.logo span{font-family:'DM Sans',sans-serif;font-size:10px;color:var(--gold);letter-spacing:1px}
+nav{display:flex;gap:25px;font-size:11px;color:#ccc}
+nav a:hover{color:var(--gold)}
+.hero{min-height:680px;display:flex;align-items:center;padding:90px 9%;background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800') center/cover}
+.hero-content{max-width:680px}
+.eyebrow{color:var(--gold);letter-spacing:4px;font-size:11px}
 h1{font-family:'Playfair Display',serif;font-size:clamp(48px,7vw,82px);font-weight:400;line-height:1.12;margin:25px 0}
-h1 span,.gold{color:#c6a56a;font-style:italic}
+h1 span,.gold{color:var(--gold);font-style:italic}
 .hero p{color:#ddd;line-height:1.9;max-width:530px;font-size:14px}
-.btn{display:inline-block;margin-top:32px;background:#c6a56a;color:#111;padding:16px 30px;font-size:11px;letter-spacing:2px;font-weight:600}
+.btn{display:inline-block;margin-top:30px;background:var(--gold);color:#111;padding:15px 29px;font-size:11px;letter-spacing:2px;font-weight:600;border:0;cursor:pointer}
 .btn:hover{background:#e0c18a}
-section{padding:100px 7%}
+section{padding:95px 7%}
 .section-heading{text-align:center;margin-bottom:55px}
 .section-heading h2{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,52px);font-weight:400;margin:17px 0}
-.section-heading p{color:#aaa;font-size:13px;line-height:1.8}
+.section-heading p{color:var(--muted);font-size:13px;line-height:1.8}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
 .about img{width:100%;height:480px;object-fit:cover}
 .about h2{font-family:'Playfair Display',serif;font-size:45px;font-weight:400;margin:20px 0}
-.about p{color:#aaa;line-height:2;font-size:14px;margin-bottom:15px}
-.portfolio{background:#171714}
-.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
-.portfolio-card{overflow:hidden;background:#20201c}
-.portfolio-card img{width:100%;height:370px;object-fit:cover;display:block;transition:.7s}
-.portfolio-card:hover img{transform:scale(1.05)}
-.portfolio-info{padding:23px;border-bottom:1px solid #c6a56a}
-.portfolio-info span{font-size:10px;color:#c6a56a;letter-spacing:2px}
-.portfolio-info h3{font-family:'Playfair Display',serif;font-weight:400;font-size:25px;margin:12px 0}
-.portfolio-info p{font-size:12px;color:#aaa;letter-spacing:1px}
-.skills{background:#11110f;text-align:center}
-.skill-list{display:flex;justify-content:center;flex-wrap:wrap;gap:15px;margin-top:30px}
-.skill{border:1px solid #a88b59;color:#e0c18a;padding:16px 25px;font-size:11px;letter-spacing:2px}
+.about p{color:var(--muted);line-height:2;font-size:14px;margin-bottom:15px}
+
+/* SERVICES */
 .services{background:#171714}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.service{border:1px solid #39362f;padding:35px 27px}
-.service h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:15px}
-.service p{font-size:13px;color:#aaa;line-height:1.9}
-.service small{color:#c6a56a;letter-spacing:2px}
-.contact{background:#11110f}
+.service{border:1px solid #39362f;padding:32px 26px;background:#191916;transition:.3s}
+.service:hover{border-color:var(--gold);transform:translateY(-4px)}
+.service small{color:var(--gold);letter-spacing:2px;font-size:10px}
+.service h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin:17px 0 12px}
+.service p{font-size:13px;color:var(--muted);line-height:1.9;min-height:75px}
+.enquiry-link{display:inline-block;margin-top:20px;color:var(--gold);font-size:11px;letter-spacing:2px;border-bottom:1px solid var(--gold);padding-bottom:7px}
+.enquiry-link:hover{color:white;border-color:white}
+
+/* PORTFOLIO */
+.portfolio{background:#11110f}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.portfolio-card{background:#1b1b18;overflow:hidden}
+.portfolio-card img{width:100%;height:370px;object-fit:cover;display:block;transition:.7s}
+.portfolio-card:hover img{transform:scale(1.04)}
+.portfolio-info{padding:24px;border-bottom:1px solid var(--gold)}
+.portfolio-info span{font-size:10px;color:var(--gold);letter-spacing:2px}
+.portfolio-info h3{font-family:'Playfair Display',serif;font-size:25px;font-weight:400;margin:12px 0}
+.portfolio-info p{font-size:12px;color:#aaa;letter-spacing:1px;line-height:1.8}
+.portfolio-note{text-align:center;color:#777;font-size:11px;margin-top:25px;line-height:1.8}
+
+/* SKILLS */
+.skills{text-align:center;background:#171714}
+.skill-list{display:flex;justify-content:center;flex-wrap:wrap;gap:15px;margin-top:30px}
+.skill{border:1px solid #a88b59;color:#e0c18a;padding:15px 24px;font-size:11px;letter-spacing:2px}
+
+/* PRICING */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.price-card{border:1px solid #39362f;padding:32px 25px;background:#191916}
+.price-card h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:400}
+.price-card .price{font-size:28px;color:var(--gold);margin:20px 0}
+.price-card p{font-size:13px;color:#aaa;line-height:1.9}
+.price-card .btn{font-size:10px}
+
+/* PROCESS */
+.process{background:#171714}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.process-item{border-top:1px solid var(--gold);padding-top:20px}
+.process-item span{color:var(--gold);font-size:12px}
+.process-item h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;margin:15px 0}
+.process-item p{font-size:12px;color:#aaa;line-height:1.8}
+
+/* FAQ */
+.faq-list{max-width:850px;margin:auto}
+.faq-item{border-bottom:1px solid #39362f;padding:22px 0}
+.faq-item h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:400;margin-bottom:10px}
+.faq-item p{font-size:13px;color:#aaa;line-height:1.8}
+
+/* CONTACT */
+.contact{background:#171714}
 .contact-wrap{max-width:750px;margin:auto}
 .contact-form{display:grid;gap:15px}
 input,textarea,select{width:100%;padding:17px;background:#1d1d19;border:1px solid #444;color:white;font-family:inherit;font-size:13px}
 textarea{min-height:130px;resize:vertical}
-button{border:0;cursor:pointer}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--gold)}
 footer{padding:40px 7%;border-top:1px solid #333;display:flex;justify-content:space-between;gap:20px;color:#999;font-size:12px}
-@media(max-width:750px){
-header{padding:0 5%;height:auto;min-height:75px;flex-wrap:wrap;gap:12px;padding-top:15px;padding-bottom:15px}
+footer span{color:var(--gold)}
+@media(max-width:850px){
+.service-grid{grid-template-columns:repeat(2,1fr)}
+.pricing-grid{grid-template-columns:1fr 1fr}
+.process-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+header{height:auto;min-height:75px;flex-wrap:wrap;padding:15px 5%;gap:13px}
 .logo{font-size:17px}
 .logo span{display:block;margin-top:4px}
-nav{gap:14px;flex-wrap:wrap;font-size:10px}
-.hero{min-height:580px;padding:70px 7%}
+nav{gap:13px;flex-wrap:wrap;font-size:10px}
+.hero{min-height:570px;padding:70px 7%}
 section{padding:70px 6%}
 .about{grid-template-columns:1fr;gap:30px}
 .about img{height:330px}
-.portfolio-grid{grid-template-columns:1fr}
-.portfolio-card img{height:280px}
-.service-grid{grid-template-columns:1fr}
+.service-grid,.portfolio-grid,.pricing-grid,.process-grid{grid-template-columns:1fr}
+.portfolio-card img{height:270px}
 footer{flex-direction:column}
 }
 </style>
@@ -83,6 +123,7 @@ footer{flex-direction:column}
 <a href="#about">ABOUT</a>
 <a href="#services">SERVICES</a>
 <a href="#portfolio">PORTFOLIO</a>
+<a href="#pricing">PRICING</a>
 <a href="#contact">CONTACT</a>
 </nav>
 </header>
@@ -91,7 +132,7 @@ footer{flex-direction:column}
 <div class="hero-content">
 <div class="eyebrow">LONDON · ARCHITECTURE · INTERIORS</div>
 <h1>Designing Spaces<br>That <span>Inspire.</span></h1>
-<p>Thoughtful architectural concepts, elegant interiors and contemporary exterior design. We bring ideas to life through detailed planning and visualisation.</p>
+<p>Thoughtful architectural concepts, elegant interiors and contemporary exterior design. We bring ideas to life through detailed planning and modern visualisation.</p>
 <a href="#contact" class="btn">DISCUSS YOUR PROJECT</a>
 </div>
 </section>
@@ -102,22 +143,76 @@ footer{flex-direction:column}
 <div class="eyebrow">ABOUT THE STUDIO</div>
 <h2>Spaces With Purpose. <span class="gold">Design With Vision.</span></h2>
 <p>ATELIER NOIR is a design-focused studio offering architectural concepts, interior planning and exterior visualisation.</p>
-<p>Our approach combines creative thinking, technical drawing and modern digital tools to develop beautiful and practical spaces.</p>
+<p>Our approach combines creative thinking, technical drawings and modern digital tools to develop beautiful and practical spaces.</p>
 <a href="#services" class="btn">EXPLORE SERVICES</a>
+</div>
+</section>
+
+<section id="services" class="services">
+<div class="section-heading">
+<div class="eyebrow">WHAT WE OFFER</div>
+<h2>Our <span class="gold">Services</span></h2>
+<p>Thoughtful design solutions tailored to your space and requirements.</p>
+</div>
+
+<div class="service-grid">
+
+<div class="service">
+<small>01 / INTERIORS</small>
+<h3>Interior Design</h3>
+<p>Elegant interiors, furniture layouts, colour schemes and detailed space planning.</p>
+<a class="enquiry-link" href="#contact" onclick="selectService('Interior Design')">FOR ENQUIRY ↗</a>
+</div>
+
+<div class="service">
+<small>02 / EXTERIORS</small>
+<h3>Exterior Design</h3>
+<p>Contemporary facade concepts, material selections and exterior visualisation.</p>
+<a class="enquiry-link" href="#contact" onclick="selectService('Exterior Design')">FOR ENQUIRY ↗</a>
+</div>
+
+<div class="service">
+<small>03 / ARCHITECTURE</small>
+<h3>Architectural Design</h3>
+<p>Architectural concepts, floor plans, elevations and design development.</p>
+<a class="enquiry-link" href="#contact" onclick="selectService('Architectural Design')">FOR ENQUIRY ↗</a>
+</div>
+
+<div class="service">
+<small>04 / VISUALISATION</small>
+<h3>3D Visualisation</h3>
+<p>Detailed 3D models and realistic-style renders to present design concepts.</p>
+<a class="enquiry-link" href="#contact" onclick="selectService('3D Visualisation')">FOR ENQUIRY ↗</a>
+</div>
+
+<div class="service">
+<small>05 / SPACE PLANNING</small>
+<h3>Space Planning</h3>
+<p>Functional layouts and efficient use of available residential and commercial space.</p>
+<a class="enquiry-link" href="#contact" onclick="selectService('Space Planning')">FOR ENQUIRY ↗</a>
+</div>
+
+<div class="service">
+<small>06 / RENOVATION</small>
+<h3>Renovation Concepts</h3>
+<p>Fresh design ideas, layout improvements and modern renovation concepts.</p>
+<a class="enquiry-link" href="#contact" onclick="selectService('Renovation Concepts')">FOR ENQUIRY ↗</a>
+</div>
+
 </div>
 </section>
 
 <section id="portfolio" class="portfolio">
 <div class="section-heading">
-<div class="eyebrow">OUR DESIGN SHOWCASE</div>
-<h2>Architecture & <span class="gold">Visual Portfolio</span></h2>
-<p>Concept inspiration and architectural visual references showcasing our design direction.</p>
+<div class="eyebrow">SELECTED DESIGN WORK</div>
+<h2>Our <span class="gold">Portfolio</span></h2>
+<p>Architectural concepts, technical design and visualisation.</p>
 </div>
 
 <div class="portfolio-grid">
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1000" alt="Luxury living room concept">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1100" alt="Luxury living room interior concept">
 <div class="portfolio-info">
 <span>01 / INTERIOR DESIGN</span>
 <h3>Luxury Living Space</h3>
@@ -126,16 +221,16 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000" alt="Contemporary interior concept">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1100" alt="Contemporary residential interior concept">
 <div class="portfolio-info">
 <span>02 / INTERIOR CONCEPT</span>
 <h3>Contemporary Residence</h3>
-<p>Revit · Space Planning · Rendering</p>
+<p>Revit · Space Planning · 3D Rendering</p>
 </div>
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1000" alt="Modern villa exterior">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1100" alt="Modern residential exterior concept">
 <div class="portfolio-info">
 <span>03 / EXTERIOR DESIGN</span>
 <h3>Modern Residential Villa</h3>
@@ -144,7 +239,7 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1000" alt="Modern home interior">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1100" alt="Modern home interior concept">
 <div class="portfolio-info">
 <span>04 / ARCHITECTURAL VISUALISATION</span>
 <h3>Minimalist Home Concept</h3>
@@ -153,7 +248,7 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1000" alt="Luxury interior">
+<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1100" alt="Elegant interior concept">
 <div class="portfolio-info">
 <span>05 / LIVING ROOM DESIGN</span>
 <h3>Elegant Living Interior</h3>
@@ -162,7 +257,7 @@ footer{flex-direction:column}
 </div>
 
 <div class="portfolio-card">
-<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1000" alt="Contemporary residential design">
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1100" alt="Contemporary residential architecture concept">
 <div class="portfolio-info">
 <span>06 / RESIDENTIAL DESIGN</span>
 <h3>Contemporary Architecture</h3>
@@ -171,13 +266,17 @@ footer{flex-direction:column}
 </div>
 
 </div>
+
+<p style="text-align:center;color:#777;font-size:11px;margin-top:25px;line-height:1.8">
+Illustrative design references. Replace with original project drawings and renders before presenting these as completed work.
+</p>
 </section>
 
 <section class="skills">
-<div class="eyebrow">OUR TECHNICAL EXPERTISE</div>
 <div class="section-heading">
+<div class="eyebrow">OUR TECHNICAL EXPERTISE</div>
 <h2>Design Tools & <span class="gold">Technology</span></h2>
-<p>Professional digital tools supporting our design and visualisation workflow.</p>
+<p>Digital tools used to support our architectural design workflow.</p>
 </div>
 <div class="skill-list">
 <span class="skill">AUTOCAD</span>
@@ -189,43 +288,84 @@ footer{flex-direction:column}
 </div>
 </section>
 
-<section id="services" class="services">
+<section id="pricing">
 <div class="section-heading">
-<div class="eyebrow">WHAT WE OFFER</div>
-<h2>Our <span class="gold">Services</span></h2>
-<p>Design support for residential spaces and architectural projects.</p>
+<div class="eyebrow">TRANSPARENT STARTING PRICES</div>
+<h2>Our <span class="gold">Packages</span></h2>
+<p>Indicative starting prices. Final quotes depend on project scope and requirements.</p>
 </div>
+<div class="pricing-grid">
+<div class="price-card">
+<h3>Consultation</h3>
+<div class="price">£100–£300</div>
+<p>Initial discussion, design direction and project requirements review.</p>
+<a class="btn" href="#contact" onclick="selectService('Consultation')">ENQUIRE NOW</a>
+</div>
+<div class="price-card">
+<h3>Room Design</h3>
+<div class="price">£500–£1,000</div>
+<p>Interior concept, furniture layout, colour direction and design presentation.</p>
+<a class="btn" href="#contact" onclick="selectService('Room Design')">ENQUIRE NOW</a>
+</div>
+<div class="price-card">
+<h3>Complete Design</h3>
+<div class="price">£2,500–£5,000</div>
+<p>Extended design package for larger residential projects, subject to scope.</p>
+<a class="btn" href="#contact" onclick="selectService('Complete Design')">ENQUIRE NOW</a>
+</div>
+</div>
+</section>
 
-<div class="service-grid">
-<div class="service">
-<small>01 / ARCHITECTURE</small>
-<h3>Architectural Design</h3>
-<p>Concept development, floor plans, elevations and architectural drawings.</p>
+<section class="process">
+<div class="section-heading">
+<div class="eyebrow">HOW WE WORK</div>
+<h2>Our Design <span class="gold">Process</span></h2>
 </div>
-<div class="service">
-<small>02 / INTERIORS</small>
-<h3>Interior Design</h3>
-<p>Modern interior concepts, furniture layouts, colour schemes and space planning.</p>
+<div class="process-grid">
+<div class="process-item">
+<span>01 / DISCOVER</span>
+<h3>Initial Discussion</h3>
+<p>We understand your requirements, budget, style and project goals.</p>
 </div>
-<div class="service">
-<small>03 / EXTERIORS</small>
-<h3>Exterior Design</h3>
-<p>Contemporary facade concepts, materials and exterior visualisation.</p>
+<div class="process-item">
+<span>02 / DEVELOP</span>
+<h3>Design Planning</h3>
+<p>We develop layouts, concepts and the proposed design direction.</p>
 </div>
-<div class="service">
-<small>04 / TECHNICAL</small>
-<h3>AutoCAD Drafting</h3>
-<p>Detailed 2D drawings, layouts and technical design documentation.</p>
+<div class="process-item">
+<span>03 / VISUALISE</span>
+<h3>Design Presentation</h3>
+<p>We present drawings, models and visual references for review.</p>
 </div>
-<div class="service">
-<small>05 / BIM</small>
-<h3>Revit Modelling</h3>
-<p>3D building models, design development and BIM-based visualisation.</p>
+<div class="process-item">
+<span>04 / REFINE</span>
+<h3>Final Revisions</h3>
+<p>We refine the agreed design deliverables based on your feedback.</p>
 </div>
-<div class="service">
-<small>06 / VISUALS</small>
-<h3>3D Rendering</h3>
-<p>Photorealistic-style visual presentations to help clients understand design concepts.</p>
+</div>
+</section>
+
+<section>
+<div class="section-heading">
+<div class="eyebrow">COMMON QUESTIONS</div>
+<h2>Frequently Asked <span class="gold">Questions</span></h2>
+</div>
+<div class="faq-list">
+<div class="faq-item">
+<h3>Do you offer services in London?</h3>
+<p>We aim to work with London-based clients and can discuss project requirements remotely.</p>
+</div>
+<div class="faq-item">
+<h3>What software do you use?</h3>
+<p>Our design workflow includes AutoCAD, Revit and 3D rendering tools.</p>
+</div>
+<div class="faq-item">
+<h3>Can I request only 3D rendering?</h3>
+<p>Yes. You can enquire about individual services depending on the available project information and scope.</p>
+</div>
+<div class="faq-item">
+<h3>How can I receive a quote?</h3>
+<p>Send your project details through the enquiry form and we can discuss the scope and pricing.</p>
 </div>
 </div>
 </section>
@@ -235,21 +375,24 @@ footer{flex-direction:column}
 <div class="section-heading">
 <div class="eyebrow">LET'S CREATE SOMETHING BEAUTIFUL</div>
 <h2>Start Your <span class="gold">Project</span></h2>
-<p>Tell us about your space, ideas and requirements.</p>
+<p>Tell us about your project and we will get in touch.</p>
 </div>
 
 <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST">
 <input type="text" name="name" placeholder="Your Full Name" required>
 <input type="email" name="email" placeholder="Your Email Address" required>
 <input type="text" name="location" placeholder="Project Location">
-<select name="service" required>
+<select name="service" id="serviceSelect" required>
 <option value="">Select a Service</option>
-<option>Architectural Design</option>
 <option>Interior Design</option>
 <option>Exterior Design</option>
-<option>AutoCAD Drafting</option>
-<option>Revit Modelling</option>
-<option>3D Rendering</option>
+<option>Architectural Design</option>
+<option>3D Visualisation</option>
+<option>Space Planning</option>
+<option>Renovation Concepts</option>
+<option>Consultation</option>
+<option>Room Design</option>
+<option>Complete Design</option>
 </select>
 <textarea name="message" placeholder="Tell us about your project..." required></textarea>
 <button class="btn" type="submit">SEND ENQUIRY</button>
@@ -259,8 +402,14 @@ footer{flex-direction:column}
 
 <footer>
 <div>© 2026 ATELIER NOIR · Architecture & Design Studio</div>
-<div>London, United Kingdom · hello@yourdomain.co.uk</div>
+<div>London, United Kingdom · <span>hello@yourdomain.co.uk</span></div>
 </footer>
+
+<script>
+function selectService(service){
+document.getElementById('serviceSelect').value=service;
+}
+</script>
 
 </body>
 </html>
